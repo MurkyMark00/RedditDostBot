@@ -7,7 +7,7 @@ with open("tweet_id.txt", "r") as f:
     # If it already posted the same id
     if f.readline() == tweet_id:
         with open("temp.txt", "a") as g:
-            g.write("same")
+            g.write("same\n")
 
     else:
         reddit = praw.Reddit("bot1")
